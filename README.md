@@ -7,7 +7,7 @@ Before using the script, make sure to install the required libraries and authent
 
 pip install pandas earthengine-api
 
-Usage
+Usage:
 Set up your Python environment by importing the necessary libraries and initializing the GEE API.
 
 import pandas as pd
@@ -37,4 +37,3 @@ result = Landsat_Surface_Reflectance(
 )
 
 print(result)
-
