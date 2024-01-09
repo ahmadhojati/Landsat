@@ -3,20 +3,20 @@ Landsat Surface Reflectance Data Retrieval
 
 This Python script provides a convenient way to retrieve Landsat surface reflectance data for a specific geographic point within a given time range using Google Earth Engine (GEE). The script returns the data in the form of a Pandas DataFrame.
 
-Prerequisites
+Prerequisites  
 
-Before using the script, make sure to install the required libraries and authenticate with GEE.
+Before using the script, make sure to install the required libraries and authenticate with GEE.  
 
-pip install pandas earthengine-api
+pip install pandas earthengine-api  
 
-Usage:
-Set up your Python environment by importing the necessary libraries and initializing the GEE API.
+Usage:  
+Set up your Python environment by importing the necessary libraries and initializing the GEE API.  
 
-import pandas as pd
-import ee
+import pandas as pd  
+import ee  
 
-ee.Authenticate()
-ee.Initialize()
+ee.Authenticate()  
+ee.Initialize()  
 
 Define the geographic coordinates of the point of interest, the time range for data collection, and any optional parameters.
 
