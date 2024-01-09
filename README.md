@@ -18,24 +18,24 @@ import ee
 ee.Authenticate()  
 ee.Initialize()  
 
-Define the geographic coordinates of the point of interest, the time range for data collection, and any optional parameters.
+Define the geographic coordinates of the point of interest, the time range for data collection, and any optional parameters.  
 
-longitude = -122.431
-latitude = 37.773
-start_date = '2022-01-01'
-end_date = '2022-12-31'
+longitude = -122.431  
+latitude = 37.773  
+start_date = '2022-01-01'  
+end_date = '2022-12-31'  
 
-Call the Landsat_Surface_Reflectance function with the specified parameters.
+Call the Landsat_Surface_Reflectance function with the specified parameters.  
 
-result = Landsat_Surface_Reflectance(
-    longitude,
-    latitude,
-    start_date,
-    end_date,
-    collection_address='LANDSAT/LC08/C02/T1_L2',  # Landsat 8, Collection 2, Tier 1
-    bands=['SR_B4', 'SR_B3', 'SR_B2'],  # Optical bands
-    max_cloud_cover=10,  # Maximum acceptable cloud cover
-    scale=30  # Spatial resolution
-)
+result = Landsat_Surface_Reflectance(  
+    longitude,  
+    latitude,  
+    start_date,  
+    end_date,  
+    collection_address='LANDSAT/LC08/C02/T1_L2',  # Landsat 8, Collection 2, Tier 1  
+    bands=['SR_B4', 'SR_B3', 'SR_B2'],  # Optical bands  
+    max_cloud_cover=10,  # Maximum acceptable cloud cover  
+    scale=30  # Spatial resolution  
+)  
 
-print(result)
+print(result)  
